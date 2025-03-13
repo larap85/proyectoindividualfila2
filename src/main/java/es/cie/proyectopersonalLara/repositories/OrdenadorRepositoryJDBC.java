@@ -25,7 +25,7 @@ public class OrdenadorRepositoryJDBC implements OrdenadorRepository {
     @Override
     public void insertar(Ordenador ordenador) {
 
-        plantilla.update("insert into ordenadores values (?,?,?;?)", ordenador.getNumero(), ordenador.getMarca(),
+        plantilla.update("insert into ordenadores values (?,?,?,?)", ordenador.getNumero(), ordenador.getMarca(),
                 ordenador.getModelo(), ordenador.getPrecio());
 
     }
